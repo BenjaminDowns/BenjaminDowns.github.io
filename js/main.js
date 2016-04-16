@@ -12,7 +12,7 @@
     require('angular-ui-bootstrap')
 
     // internal directories/files
-    const MainCtrl      = require('./controllers/MainCtrl.js'),
+    var MainCtrl      = require('./controllers/MainCtrl.js'),
           AboutCtrl     = require('./controllers/AboutCtrl.js'),
           ContactCtrl   = require('./controllers/ContactCtrl.js'),
           WikiCtrl      = require('./controllers/WikiCtrl.js'),
@@ -37,7 +37,7 @@
 
         function AboutCtrl() {
 
-            const vm = this
+            var vm = this
             
             vm.introMessage = 'Web Development'
             
@@ -53,7 +53,7 @@
 
         function ContactCtrl() {
 
-            const vm = this
+            var vm = this
             
             vm.message = 'Hello from the Contact Controller'
 
@@ -67,7 +67,7 @@
 
         function MainCtrl() {
             // view-model
-            const vm = this
+            var vm = this
 
             vm.introMessage     = 'I\'m a fullstack Javascript web developer.'
             vm.introMessageSub  = 'Here are a few things that I built with HTML5, CSS3, Javascript, Angular, NodeJS, Express....'
@@ -216,7 +216,7 @@
 
         function WikiCtrl() {
 
-            const vm = this
+            var vm = this
             
             vm.message = 'Hello from the Wiki Controller'
 
