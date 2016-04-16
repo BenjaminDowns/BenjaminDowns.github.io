@@ -41,6 +41,7 @@ ul {
 
 .navbar-links {
   float: right;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-around;
   margin-right: 1%;
@@ -63,6 +64,7 @@ ul {
   margin-bottom: -25px;
   width: 10%;
   font-size: 1em;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-around;
   text-shadow: 2px 2px 2px #ccc;
@@ -149,6 +151,7 @@ ul {
 }
 
 .flex-center {
+  display: -webkit-flex;
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -171,6 +174,7 @@ ul {
 
 .contact-imgs {
   margin-top: 10%;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -202,8 +206,11 @@ ul {
   }
 
   .contact-imgs {
+    -webkit-flex-direction: column;  
     flex-direction: column;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-align-items: center;
     align-items: center;
   }
 }
