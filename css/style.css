@@ -151,10 +151,13 @@ ul {
 }
 
 .flex-center {
-  display: -webkit-flex;
   display: flex;
   justify-content: space-around;
   align-content: center;
+  /*safari prefixes*/
+  display: -webkit-flex;
+  -webkit-justify-content: space-around;
+  -webkit-align-content: center;
 }
 
 .footer {
